@@ -1,0 +1,139 @@
+[0.242s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_robot_driver -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver
+[0.803s] -- The C compiler identification is GNU 9.4.0
+[1.178s] -- The CXX compiler identification is GNU 9.4.0
+[1.190s] -- Check for working C compiler: /usr/bin/cc
+[4.040s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.046s] -- Detecting C compiler ABI info
+[7.401s] -- Detecting C compiler ABI info - done
+[7.491s] -- Detecting C compile features
+[7.492s] -- Detecting C compile features - done
+[7.501s] -- Check for working CXX compiler: /usr/bin/g++
+[7.876s] -- Check for working CXX compiler: /usr/bin/g++ -- works
+[7.885s] -- Detecting CXX compiler ABI info
+[8.422s] -- Detecting CXX compiler ABI info - done
+[8.461s] -- Detecting CXX compile features
+[8.462s] -- Detecting CXX compile features - done
+[8.473s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[8.539s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[8.540s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.056s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.157s] -- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)
+[9.271s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.298s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[9.564s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.677s] -- Found FastRTPS: /opt/ros/foxy/include  
+[10.058s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.845s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[11.948s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[11.951s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.953s] -- Looking for pthread.h
+[13.646s] -- Looking for pthread.h - found
+[13.647s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[15.191s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[15.194s] -- Looking for pthread_create in pthreads
+[16.354s] -- Looking for pthread_create in pthreads - not found
+[16.355s] -- Looking for pthread_create in pthread
+[17.802s] -- Looking for pthread_create in pthread - found
+[17.807s] -- Found Threads: TRUE  
+[19.081s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[19.126s] -- Found ur_dashboard_msgs: 0.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake)
+[19.968s] -- Found ur_controllers: 0.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/cmake)
+[22.918s] -- Found ur_description: 0.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description/share/ur_description/cmake)
+[22.921s] -- Found ur_bringup: 0.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup/share/ur_bringup/cmake)
+[22.954s] -- Found launch_testing_ament_cmake: 0.10.9 (/opt/ros/foxy/share/launch_testing_ament_cmake/cmake)
+[22.961s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[23.014s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[23.030s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[23.031s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[23.031s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[23.032s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[23.075s] -- Found PythonExtra: .so  
+[23.083s] -- Configuring done
+[23.260s] -- Generating done
+[23.274s] -- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver
+[23.316s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_robot_driver -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver
+[23.320s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver -- -j4 -l4
+[23.516s] [35m[1mScanning dependencies of target dashboard_client[0m
+[23.795s] [ 12%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/dashboard_client_ros.cpp.o[0m
+[46.162s] [ 25%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/urcl_log_handler.cpp.o[0m
+[47.697s] [ 37%] [32mBuilding CXX object CMakeFiles/dashboard_client.dir/src/dashboard_client_node.cpp.o[0m
+[52.498s] [ 50%] [32m[1mLinking CXX executable dashboard_client[0m
+[53.123s] [ 50%] Built target dashboard_client
+[53.141s] [35m[1mScanning dependencies of target ur_robot_driver_plugin[0m
+[53.232s] [ 62%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/dashboard_client_ros.cpp.o[0m
+[63.486s] [ 75%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/urcl_log_handler.cpp.o[0m
+[64.350s] [ 87%] [32mBuilding CXX object CMakeFiles/ur_robot_driver_plugin.dir/src/hardware_interface.cpp.o[0m
+[70.218s] [100%] [32m[1mLinking CXX shared library libur_robot_driver_plugin.so[0m
+[70.881s] [100%] Built target ur_robot_driver_plugin
+[71.595s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver -- -j4 -l4
+[71.663s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver
+[71.676s] -- Install configuration: "Debug"
+[71.676s] -- Execute custom install script
+[71.677s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver//hardware_interface_plugin.xml
+[71.689s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/lib/ur_robot_driver/dashboard_client
+[71.701s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/lib/libur_robot_driver_plugin.so
+[71.712s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/include/ur_robot_driver/dashboard_client_ros.hpp
+[71.723s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/include/ur_robot_driver/hardware_interface.hpp
+[71.735s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/include/ur_robot_driver/urcl_log_handler.hpp
+[71.746s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/environment/library_path.sh
+[71.757s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/environment/library_path.dsv
+[71.769s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/bin/tool_communication
+[71.781s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/Dockerfile
+[71.793s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/externalcontrol-1.0.5.urcap
+[71.806s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ros_control.urscript
+[71.818s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/rs485-1.0.urcap
+[71.830s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/rtde_input_recipe.txt
+[71.842s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/rtde_output_recipe.txt
+[71.855s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/README.md
+[71.868s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/build_and_run_docker_ursim_with_driver.sh
+[71.879s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/docker-compose.yml
+[71.892s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/driver/Dockerfile
+[71.904s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/driver/entrypoint.sh
+[71.916s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/driver/wait_dashboard_server.sh
+[71.928s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/add_urcap.png
+[71.940s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/added_external_ctrl.png
+[71.951s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/added_urcap.png
+[71.963s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/move_tab.png
+[71.975s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/powered_on.png
+[71.987s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/poweron_proc.png
+[71.999s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/running_external_ctrl.png
+[72.012s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/rviz.png
+[72.024s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/settings.png
+[72.036s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/terminal.png
+[72.049s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/urcap_menu.png
+[72.061s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/resources/vncviewer_list.png
+[72.073s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.installation
+[72.085s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.script
+[72.099s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.txt
+[72.111s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.urp
+[72.124s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/.vol/urcap_ros_control.variables
+[72.136s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/externalcontrol-1.0.5.urcap
+[72.148s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/ros_control.urscript
+[72.160s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/aux/rs485-1.0.urcap
+[72.172s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g3/Dockerfile
+[72.184s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g3/entrypoint.sh
+[72.196s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g5/Dockerfile
+[72.208s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/resources/ursim_driver/ursim/g5/entrypoint.sh
+[72.221s] -- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/include/ur_robot_driver/dashboard_client_ros.hpp
+[72.221s] -- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/include/ur_robot_driver/hardware_interface.hpp
+[72.222s] -- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/include/ur_robot_driver/urcl_log_handler.hpp
+[72.223s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ament_index/resource_index/package_run_dependencies/ur_robot_driver
+[72.235s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ament_index/resource_index/parent_prefix_path/ur_robot_driver
+[72.247s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/environment/ament_prefix_path.sh
+[72.260s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/environment/ament_prefix_path.dsv
+[72.272s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/environment/path.sh
+[72.284s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/environment/path.dsv
+[72.296s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.bash
+[72.308s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.sh
+[72.320s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.zsh
+[72.332s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/local_setup.dsv
+[72.344s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/package.dsv
+[72.356s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ament_index/resource_index/packages/ur_robot_driver
+[72.368s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ur_robot_driver
+[72.380s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[72.393s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[72.405s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[72.417s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig.cmake
+[72.429s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/cmake/ur_robot_driverConfig-version.cmake
+[72.441s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_robot_driver/share/ur_robot_driver/package.xml
+[72.463s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver' returned '0': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_description:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_bringup:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/ur_robot_driver

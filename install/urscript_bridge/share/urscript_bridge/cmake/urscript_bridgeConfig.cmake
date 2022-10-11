@@ -1,0 +1,1 @@
+/home/ros2-user/ros2_workspace/robotics-v1/build/urscript_bridge/ament_cmake_core/urscript_bridgeConfig.cmake

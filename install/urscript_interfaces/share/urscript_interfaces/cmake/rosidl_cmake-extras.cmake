@@ -1,0 +1,1 @@
+/home/ros2-user/ros2_workspace/robotics-v1/build/urscript_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

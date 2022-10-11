@@ -1,0 +1,1 @@
+/home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_robot_driver/resources/ursim_driver/build_and_run_docker_ursim_with_driver.sh

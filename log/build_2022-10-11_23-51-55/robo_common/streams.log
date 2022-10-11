@@ -1,0 +1,129 @@
+[0.092s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/robo_common': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/robo_common -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/robo_common
+[0.129s] -- Found cmake_helpers: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[0.140s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.202s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.503s] -- Configuring done
+[0.524s] -- Generating done
+[0.529s] -- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/robo_common
+[0.536s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/robo_common' returned '0': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/robo_common -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/robo_common
+[0.537s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/robo_common': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/robo_common -- -j4 -l4
+[0.660s] [35m[1mScanning dependencies of target robo_common[0m
+[0.731s] [  3%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/RoboCommonLayout.cpp.o[0m
+[0.734s] [  6%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/fog_of_war/FogOfWar.cpp.o[0m
+[0.762s] [ 10%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/Field.cpp.o[0m
+[0.795s] [ 13%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/ObjectApproachOverlay.cpp.o[0m
+[2.368s] [ 17%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/fog_of_war/FogCollisionObject.cpp.o[0m
+[2.832s] [ 20%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/obstacles/Obstacle.cpp.o[0m
+[2.920s] [ 24%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/field/obstacles/ObstacleHandler.cpp.o[0m
+[3.665s] [ 27%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/panels/TimePanel.cpp.o[0m
+[3.970s] [ 31%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/panels/NumberCounterPanel.cpp.o[0m
+[3.993s] [ 34%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/panels/IndicatorPanel.cpp.o[0m
+[4.086s] [ 37%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/debug/DebugField.cpp.o[0m
+[4.657s] [ 41%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/Robot.cpp.o[0m
+[4.983s] [ 44%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/helpers/RobotInitHelper.cpp.o[0m
+[4.994s] [ 48%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/entities/robot/animation/RobotAnimator.cpp.o[0m
+[5.316s] [ 51%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/GameEndAnimator.cpp.o[0m
+[5.587s] [ 55%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/AchievementAnimator.cpp.o[0m
+[5.896s] [ 58%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/EndScreenAppearAnimator.cpp.o[0m
+[6.591s] [ 62%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/CountdownAnimator.cpp.o[0m
+[6.812s] [ 65%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/animators/HelpPageAnimator.cpp.o[0m
+[6.891s] [ 68%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/layout/helpers/RoboCommonLayoutInitHelper.cpp.o[0m
+[7.390s] [ 72%] [32mBuilding CXX object CMakeFiles/robo_common.dir/src/helpers/CollisionWatcher.cpp.o[0m
+[8.870s] [ 75%] [32m[1mLinking CXX static library librobo_common.a[0m
+[9.243s] [100%] Built target robo_common
+[9.331s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/robo_common' returned '0': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/robo_common -- -j4 -l4
+[9.486s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/robo_common': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/robo_common
+[9.496s] -- Install configuration: "Debug"
+[9.497s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/package.xml
+[9.497s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/lib/robo_common/librobo_common.a
+[9.671s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/ament_index/resource_index/packages/robo_common
+[9.671s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/hook/ament_prefix_path.dsv
+[9.672s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/hook/ros_package_path.dsv
+[9.672s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/ament_index/resource_index/package_run_dependencies/robo_common
+[9.672s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/ament_index/resource_index/parent_prefix_path/robo_common
+[9.672s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/environment/ament_prefix_path.sh
+[9.672s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/environment/ament_prefix_path.dsv
+[9.672s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/environment/path.sh
+[9.672s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/environment/path.dsv
+[9.672s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/local_setup.bash
+[9.673s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/local_setup.sh
+[9.673s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/local_setup.zsh
+[9.673s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/local_setup.dsv
+[9.673s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/package.dsv
+[9.673s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/ament_index/resource_index/packages/robo_common
+[9.673s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/cmake/robo_commonConfig.cmake
+[9.674s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/cmake/robo_commonConfig-version.cmake
+[9.674s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/share/robo_common/package.xml
+[9.674s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/lib/librobo_common.a
+[9.818s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include
+[9.819s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common
+[9.820s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/helpers
+[9.820s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/helpers/CollisionObject.h
+[9.821s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/helpers/CollisionWatcher.h
+[9.822s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/helpers/LevelFileLoader.h
+[9.822s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/defines
+[9.823s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/defines/RoboCommonDefines.h
+[9.823s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/defines/RoboCommonFunctionalDefines.h
+[9.824s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout
+[9.824s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/RoboCommonLayout.h
+[9.824s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/config
+[9.825s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/config/RoboCommonLayoutConfig.h
+[9.826s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities
+[9.826s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot
+[9.826s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/config
+[9.827s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/config/RobotBaseConfig.h
+[9.828s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/helpers
+[9.828s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/helpers/RobotUtils.h
+[9.829s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/helpers/RobotInitHelper.h
+[9.830s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/helpers/RobotActInterface.h
+[9.830s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/Robot.h
+[9.830s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/animation
+[9.831s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/animation/RobotAnimator.h
+[9.831s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/animation/PlayerDamageAnimEndCb.h
+[9.831s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/entities/robot/animation/RobotAnimEndCb.h
+[9.831s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators
+[9.831s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/AchievementAnimator.h
+[9.832s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/HelpPageAnimator.h
+[9.832s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/config
+[9.832s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/config/HelpPageAnimatorConfig.h
+[9.832s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/config/AchievementAnimatorConfig.h
+[9.833s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/config/GameEndAnimatorConfig.h
+[9.834s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/GameEndAnimator.h
+[9.834s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/EndScreenAppearAnimator.h
+[9.834s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/animators/CountdownAnimator.h
+[9.834s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/debug
+[9.835s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/debug/config
+[9.835s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/debug/config/DebugFieldConfig.h
+[9.835s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/debug/DebugField.h
+[9.836s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/helpers
+[9.836s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/helpers/RoboCommonLayoutInterfaces.h
+[9.837s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/helpers/RoboCommonLayoutInitHelper.h
+[9.837s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field
+[9.837s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/Tile.h
+[9.839s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/fog_of_war
+[9.839s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/fog_of_war/FogCollisionObject.h
+[9.839s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/fog_of_war/FogOfWar.h
+[9.839s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/config
+[9.839s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/config/FieldConfig.h
+[9.840s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/config/FogOfWarConfig.h
+[9.840s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/config/ObstacleHandlerConfig.h
+[9.840s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/config/TileConfig.h
+[9.840s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/ObjectApproachOverlay.h
+[9.841s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/FieldPos.h
+[9.841s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/FieldUtils.h
+[9.841s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/obstacles
+[9.841s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/obstacles/ObstacleHandler.h
+[9.841s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/obstacles/Obstacle.h
+[9.842s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/field/Field.h
+[9.842s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels
+[9.843s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/TimePanel.h
+[9.843s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/config
+[9.843s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/config/TimePanelConfig.h
+[9.845s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/config/NumberCounterPanelConfig.h
+[9.845s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/config/IndicatorPanelConfig.h
+[9.846s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/NumberCounterPanel.h
+[9.846s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/include/robo_common/layout/panels/IndicatorPanel.h
+[9.846s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/lib/cmake/robo_common/robo_commonTargets.cmake
+[9.846s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/lib/cmake/robo_common/robo_commonTargets-debug.cmake
+[9.847s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/robo_common/lib/cmake/robo_common/robo_commonConfig.cmake
+[9.852s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/robo_common' returned '0': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/manager_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/robo_common

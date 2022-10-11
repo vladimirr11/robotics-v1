@@ -1,0 +1,1 @@
+/home/ros2-user/ros2_workspace/robotics-v1/src/robo_miner/robo_miner_common/include/robo_miner_common/message_helpers/RoboMinerMessageHelpers.h

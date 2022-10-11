@@ -17,6 +17,7 @@
     ros2_executor_threads_num: 4
     
     use_local_controller_mode: True
-    user: not_set
-    repository: not_set
+    user: vladimirr11
+    repository: https://github.com/vladimirr11/robotics-v1
     commit_sha: not_set
+    

@@ -1,0 +1,87 @@
+[1.097s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_controllers -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers
+[2.147s] -- The C compiler identification is GNU 9.4.0
+[2.476s] -- The CXX compiler identification is GNU 9.4.0
+[2.488s] -- Check for working C compiler: /usr/bin/cc
+[4.244s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.246s] -- Detecting C compiler ABI info
+[4.580s] -- Detecting C compiler ABI info - done
+[4.672s] -- Detecting C compile features
+[4.673s] -- Detecting C compile features - done
+[4.684s] -- Check for working CXX compiler: /usr/bin/g++
+[8.033s] -- Check for working CXX compiler: /usr/bin/g++ -- works
+[8.035s] -- Detecting CXX compiler ABI info
+[8.863s] -- Detecting CXX compiler ABI info - done
+[9.004s] -- Detecting CXX compile features
+[9.006s] -- Detecting CXX compile features - done
+[9.014s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[9.140s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[9.140s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.561s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.661s] -- Found control_msgs: 2.5.1 (/opt/ros/foxy/share/control_msgs/cmake)
+[9.759s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.788s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[10.388s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[10.548s] -- Found FastRTPS: /opt/ros/foxy/include  
+[10.876s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.755s] -- Found controller_interface: 0.11.0 (/opt/ros/foxy/share/controller_interface/cmake)
+[13.641s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[13.657s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.661s] -- Looking for pthread.h
+[14.070s] -- Looking for pthread.h - found
+[14.071s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[15.249s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[15.250s] -- Looking for pthread_create in pthreads
+[16.024s] -- Looking for pthread_create in pthreads - not found
+[16.024s] -- Looking for pthread_create in pthread
+[16.762s] -- Looking for pthread_create in pthread - found
+[16.766s] -- Found Threads: TRUE  
+[18.760s] -- Found joint_trajectory_controller: 0.8.2 (/opt/ros/foxy/share/joint_trajectory_controller/cmake)
+[19.419s] -- Found realtime_tools: 2.2.0 (/opt/ros/foxy/share/realtime_tools/cmake)
+[20.366s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[20.494s] -- Found ur_dashboard_msgs: 0.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake)
+[20.723s] -- Found ur_msgs: 2.0.0 (/opt/ros/foxy/share/ur_msgs/cmake)
+[22.550s] -- Configuring done
+[23.820s] -- Generating done
+[23.829s] -- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers
+[23.859s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers' returned '0': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_controllers -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers
+[23.865s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers -- -j4 -l4
+[24.231s] [35m[1mScanning dependencies of target ur_controllers[0m
+[25.720s] [ 20%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/scaled_joint_trajectory_controller.cpp.o[0m
+[34.206s] [ 40%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/gpio_controller.cpp.o[0m
+[50.377s] [ 60%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/force_torque_sensor_broadcaster.cpp.o[0m
+[59.594s] [ 80%] [32mBuilding CXX object CMakeFiles/ur_controllers.dir/src/speed_scaling_state_broadcaster.cpp.o[0m
+[68.557s] [100%] [32m[1mLinking CXX shared library libur_controllers.so[0m
+[71.042s] [100%] Built target ur_controllers
+[71.110s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers' returned '0': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers -- -j4 -l4
+[71.229s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers
+[71.363s] -- Install configuration: "Debug"
+[71.381s] -- Execute custom install script
+[71.384s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers//controller_plugins.xml
+[71.435s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/lib/libur_controllers.so
+[71.458s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/include/ur_controllers/force_torque_sensor_broadcaster.hpp
+[71.482s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/include/ur_controllers/gpio_controller.hpp
+[71.506s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/include/ur_controllers/scaled_joint_trajectory_controller.hpp
+[71.529s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/include/ur_controllers/speed_scaling_state_broadcaster.hpp
+[71.556s] -- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/controller_plugins.xml
+[71.557s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/environment/library_path.sh
+[71.624s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/environment/library_path.dsv
+[71.658s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ament_index/resource_index/package_run_dependencies/ur_controllers
+[71.708s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ament_index/resource_index/parent_prefix_path/ur_controllers
+[71.762s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/environment/ament_prefix_path.sh
+[71.796s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/environment/ament_prefix_path.dsv
+[71.905s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/environment/path.sh
+[71.932s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/environment/path.dsv
+[71.971s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/local_setup.bash
+[72.003s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/local_setup.sh
+[72.034s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/local_setup.zsh
+[72.068s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/local_setup.dsv
+[72.136s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/package.dsv
+[72.307s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ament_index/resource_index/packages/ur_controllers
+[72.347s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/ur_controllers
+[72.385s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/cmake/ament_cmake_export_dependencies-extras.cmake
+[72.478s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/cmake/ament_cmake_export_include_directories-extras.cmake
+[72.560s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/cmake/ament_cmake_export_libraries-extras.cmake
+[72.588s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/cmake/ur_controllersConfig.cmake
+[72.649s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/cmake/ur_controllersConfig-version.cmake
+[72.706s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_controllers/share/ur_controllers/package.xml
+[72.756s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers' returned '0': AMENT_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library:/opt/ros/foxy LD_LIBRARY_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/ur_client_library/lib/pkgconfig PYTHONPATH=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/ur_controllers

@@ -1,0 +1,1 @@
+/home/ros2-user/ros2_workspace/robotics-v1/src/ur_dev/urscript/urscript_bridge/launch/launch.py

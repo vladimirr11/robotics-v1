@@ -1,0 +1,121 @@
+[0.097s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/lib/sdl_utils -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils
+[0.343s] -- The CXX compiler identification is GNU 9.4.0
+[0.355s] -- Check for working CXX compiler: /usr/bin/g++
+[0.643s] -- Check for working CXX compiler: /usr/bin/g++ -- works
+[0.645s] -- Detecting CXX compiler ABI info
+[0.889s] -- Detecting CXX compiler ABI info - done
+[0.927s] -- Detecting CXX compile features
+[0.929s] -- Detecting CXX compile features - done
+[0.933s] -- Found cmake_helpers: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake)
+[0.941s] -- Looking for C++ include pthread.h
+[1.270s] -- Looking for C++ include pthread.h - found
+[1.272s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.769s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.770s] -- Looking for pthread_create in pthreads
+[2.060s] -- Looking for pthread_create in pthreads - not found
+[2.063s] -- Looking for pthread_create in pthread
+[2.458s] -- Looking for pthread_create in pthread - found
+[2.459s] -- Found Threads: TRUE  
+[2.494s] -- Found SDL2: /usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread  
+[2.507s] -- Found SDL2_IMAGE: /usr/lib/x86_64-linux-gnu/libSDL2_image.so  
+[2.512s] -- Found SDL2_TTF: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so  
+[2.518s] -- Found SDL2_MIXER: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so  
+[2.522s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.620s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.623s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.560s] -- Configuring done
+[3.597s] -- Generating done
+[3.603s] -- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils
+[3.615s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils' returned '0': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/lib/sdl_utils -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils
+[3.617s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils -- -j4 -l4
+[3.737s] [35m[1mScanning dependencies of target sdl_utils[0m
+[4.402s] [  5%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/SDLContainers.cpp.o[0m
+[4.406s] [ 10%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/ResourceContainer.cpp.o[0m
+[4.428s] [ 15%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o[0m
+[4.440s] [ 20%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/FontContainer.cpp.o[0m
+[9.091s] [ 25%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/FboContainer.cpp.o[0m
+[11.945s] [ 30%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o[0m
+[16.533s] [ 35%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/GeometryUtils.cpp.o[0m
+[17.256s] [ 40%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/LoadingScreen.cpp.o[0m
+[18.548s] [ 45%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/MonitorWindow.cpp.o[0m
+[20.089s] [ 50%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/Renderer.cpp.o[0m
+[22.821s] [ 55%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/RendererState.cpp.o[0m
+[23.405s] [ 60%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/Texture.cpp.o[0m
+[24.792s] [ 65%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/input/InputEvent.cpp.o[0m
+[24.880s] [ 70%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/input/InputEventGenerator.cpp.o[0m
+[25.483s] [ 75%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/input/MouseUtils.cpp.o[0m
+[26.707s] [ 80%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/sound/SoundMixer.cpp.o[0m
+[27.234s] [ 85%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o[0m
+[28.767s] [ 90%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/DrawParams.cpp.o[0m
+[28.893s] [ 95%] [32mBuilding CXX object CMakeFiles/sdl_utils.dir/src/drawing/defines/MonitorDefines.cpp.o[0m
+[29.540s] [100%] [32m[1mLinking CXX static library libsdl_utils.a[0m
+[30.044s] [100%] Built target sdl_utils
+[30.092s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils' returned '0': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils -- -j4 -l4
+[30.467s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils
+[30.511s] -- Install configuration: "Debug"
+[30.512s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/package.xml
+[30.525s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/sdl_utils/libsdl_utils.a
+[30.569s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/ament_index/resource_index/packages/sdl_utils
+[30.569s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/hook/ament_prefix_path.dsv
+[30.570s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/hook/ros_package_path.dsv
+[30.571s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/ament_index/resource_index/package_run_dependencies/sdl_utils
+[30.571s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/ament_index/resource_index/parent_prefix_path/sdl_utils
+[30.582s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/environment/ament_prefix_path.sh
+[30.587s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/environment/ament_prefix_path.dsv
+[30.587s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/environment/path.sh
+[30.591s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/environment/path.dsv
+[30.591s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/local_setup.bash
+[30.592s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/local_setup.sh
+[30.594s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/local_setup.zsh
+[30.596s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/local_setup.dsv
+[30.597s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/package.dsv
+[30.599s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/ament_index/resource_index/packages/sdl_utils
+[30.600s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/cmake/sdl_utilsConfig.cmake
+[30.601s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/cmake/sdl_utilsConfig-version.cmake
+[30.601s] -- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/share/sdl_utils/package.xml
+[30.601s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/libsdl_utils.a
+[30.621s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include
+[30.621s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils
+[30.623s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing
+[30.624s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/MonitorWindow.h
+[30.633s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/config
+[30.634s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/config/LoadingScreenConfig.h
+[30.635s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/config/RendererConfig.h
+[30.637s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/config/MonitorWindowConfig.h
+[30.640s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/Renderer.h
+[30.642s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/RendererState.h
+[30.644s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/LoadingScreen.h
+[30.648s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/DrawParams.h
+[30.657s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/defines
+[30.658s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/defines/RendererDefines.h
+[30.659s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/defines/MonitorDefines.h
+[30.660s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/defines/DrawConstants.h
+[30.661s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/defines/DrawUtilityDefines.h
+[30.663s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/GeometryUtils.h
+[30.668s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/drawing/Texture.h
+[30.669s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/SDLLoader.h
+[30.671s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers
+[30.671s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/TextContainer.h
+[30.672s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/config
+[30.673s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/config/SDLContainersConfig.h
+[30.674s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/ResourceContainer.h
+[30.675s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/SDLContainers.h
+[30.676s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/FontContainer.h
+[30.677s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/SoundContainer.h
+[30.680s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/containers/FboContainer.h
+[30.690s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/sound
+[30.701s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/sound/SoundMixer.h
+[30.713s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/sound/defines
+[30.713s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/sound/defines/SoundMixerDefines.h
+[30.714s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input
+[30.715s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/InputEvent.h
+[30.716s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/InputEventGenerator.h
+[30.717s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/defines
+[30.718s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/defines/EventDefines.h
+[30.718s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/TouchEntity.h
+[30.720s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/TouchEntityInterface.h
+[30.722s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/include/sdl_utils/input/MouseUtils.h
+[30.725s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/cmake/sdl_utils/sdl_utilsTargets.cmake
+[30.726s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/cmake/sdl_utils/sdl_utilsTargets-debug.cmake
+[30.727s] -- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/sdl_utils/lib/cmake/sdl_utils/sdl_utilsConfig.cmake
+[30.732s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils' returned '0': CMAKE_PREFIX_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy PKG_CONFIG_PATH=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/sdl_utils

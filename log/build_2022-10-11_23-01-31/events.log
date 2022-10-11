@@ -1,0 +1,577 @@
+[0.000000] (-) TimerEvent: {}
+[0.009225] (-) JobUnselected: {'identifier': 'game_engine'}
+[0.009492] (-) JobUnselected: {'identifier': 'manager_utils'}
+[0.009706] (-) JobUnselected: {'identifier': 'robo_cleaner_common'}
+[0.009769] (-) JobUnselected: {'identifier': 'robo_cleaner_gui'}
+[0.009820] (-) JobUnselected: {'identifier': 'robo_cleaner_interfaces'}
+[0.010026] (-) JobUnselected: {'identifier': 'robo_collector_common'}
+[0.010108] (-) JobUnselected: {'identifier': 'robo_collector_controller'}
+[0.010269] (-) JobUnselected: {'identifier': 'robo_collector_gui'}
+[0.010305] (-) JobUnselected: {'identifier': 'robo_collector_interfaces'}
+[0.011118] (-) JobUnselected: {'identifier': 'robo_common'}
+[0.011289] (-) JobUnselected: {'identifier': 'robo_miner_common'}
+[0.011326] (-) JobUnselected: {'identifier': 'robo_miner_gui'}
+[0.011355] (-) JobUnselected: {'identifier': 'robo_miner_interfaces'}
+[0.011382] (-) JobUnselected: {'identifier': 'ros2_game_engine'}
+[0.011928] (-) JobUnselected: {'identifier': 'sdl_utils'}
+[0.012033] (-) JobUnselected: {'identifier': 'ur_bringup'}
+[0.012241] (-) JobUnselected: {'identifier': 'ur_client_library'}
+[0.012303] (-) JobUnselected: {'identifier': 'ur_control_gui'}
+[0.012337] (-) JobUnselected: {'identifier': 'ur_controllers'}
+[0.012366] (-) JobUnselected: {'identifier': 'ur_dashboard_msgs'}
+[0.012553] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.012617] (-) JobUnselected: {'identifier': 'ur_moveit_config'}
+[0.012781] (-) JobUnselected: {'identifier': 'ur_robot_driver'}
+[0.012817] (-) JobUnselected: {'identifier': 'urscript_bridge'}
+[0.012963] (-) JobUnselected: {'identifier': 'urscript_common'}
+[0.012998] (-) JobUnselected: {'identifier': 'urscript_interfaces'}
+[0.013151] (cmake_helpers) JobQueued: {'identifier': 'cmake_helpers', 'dependencies': OrderedDict()}
+[0.013194] (utils) JobQueued: {'identifier': 'utils', 'dependencies': OrderedDict([('cmake_helpers', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers')])}
+[0.013630] (resource_utils) JobQueued: {'identifier': 'resource_utils', 'dependencies': OrderedDict([('cmake_helpers', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers'), ('utils', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils')])}
+[0.013852] (resource_builder) JobQueued: {'identifier': 'resource_builder', 'dependencies': OrderedDict([('cmake_helpers', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers'), ('utils', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils'), ('resource_utils', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils')])}
+[0.014188] (cmake_helpers) JobStarted: {'identifier': 'cmake_helpers'}
+[0.060732] (cmake_helpers) JobProgress: {'identifier': 'cmake_helpers', 'progress': 'cmake'}
+[0.061398] (cmake_helpers) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2-user/ros2_workspace/robotics-v1/src/lib/cmake_helpers', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/g++', '-DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.100012] (-) TimerEvent: {}
+[0.201374] (-) TimerEvent: {}
+[0.312515] (-) TimerEvent: {}
+[0.417605] (-) TimerEvent: {}
+[0.519914] (-) TimerEvent: {}
+[0.621268] (-) TimerEvent: {}
+[0.723427] (-) TimerEvent: {}
+[0.824565] (-) TimerEvent: {}
+[0.926288] (-) TimerEvent: {}
+[1.027302] (-) TimerEvent: {}
+[1.128689] (-) TimerEvent: {}
+[1.230971] (-) TimerEvent: {}
+[1.332281] (-) TimerEvent: {}
+[1.433716] (-) TimerEvent: {}
+[1.535499] (-) TimerEvent: {}
+[1.639648] (-) TimerEvent: {}
+[1.744658] (-) TimerEvent: {}
+[1.847201] (-) TimerEvent: {}
+[1.955143] (-) TimerEvent: {}
+[1.976538] (cmake_helpers) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[2.058292] (-) TimerEvent: {}
+[2.160239] (-) TimerEvent: {}
+[2.261460] (-) TimerEvent: {}
+[2.364669] (-) TimerEvent: {}
+[2.373958] (cmake_helpers) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.469402] (-) TimerEvent: {}
+[2.576315] (-) TimerEvent: {}
+[2.678561] (-) TimerEvent: {}
+[2.685538] (cmake_helpers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.780225] (-) TimerEvent: {}
+[2.884403] (-) TimerEvent: {}
+[2.985540] (-) TimerEvent: {}
+[3.088912] (-) TimerEvent: {}
+[3.190558] (-) TimerEvent: {}
+[3.231083] (cmake_helpers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.237671] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.291389] (-) TimerEvent: {}
+[3.392273] (-) TimerEvent: {}
+[3.472105] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.493958] (-) TimerEvent: {}
+[3.535764] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.559978] (cmake_helpers) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.588299] (cmake_helpers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++\n'}
+[3.595818] (-) TimerEvent: {}
+[3.699694] (-) TimerEvent: {}
+[3.801677] (-) TimerEvent: {}
+[3.852916] (cmake_helpers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ -- works\n'}
+[3.854611] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.903144] (-) TimerEvent: {}
+[4.004799] (-) TimerEvent: {}
+[4.106602] (-) TimerEvent: {}
+[4.216392] (-) TimerEvent: {}
+[4.244422] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.320408] (-) TimerEvent: {}
+[4.325951] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.329182] (cmake_helpers) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.420988] (-) TimerEvent: {}
+[4.520472] (cmake_helpers) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.522175] (-) TimerEvent: {}
+[4.623857] (-) TimerEvent: {}
+[4.720924] (cmake_helpers) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.721530] (cmake_helpers) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.728040] (-) TimerEvent: {}
+[4.828981] (-) TimerEvent: {}
+[4.931764] (-) TimerEvent: {}
+[5.032713] (-) TimerEvent: {}
+[5.134696] (-) TimerEvent: {}
+[5.246265] (-) TimerEvent: {}
+[5.347517] (-) TimerEvent: {}
+[5.449209] (-) TimerEvent: {}
+[5.551811] (-) TimerEvent: {}
+[5.653376] (-) TimerEvent: {}
+[5.757856] (-) TimerEvent: {}
+[5.862785] (-) TimerEvent: {}
+[5.944472] (cmake_helpers) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.952366] (cmake_helpers) StdoutLine: {'line': b'-- Generating done\n'}
+[5.954660] (cmake_helpers) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers\n'}
+[5.962047] (cmake_helpers) CommandEnded: {'returncode': 0}
+[5.963057] (-) TimerEvent: {}
+[5.964168] (cmake_helpers) JobProgress: {'identifier': 'cmake_helpers', 'progress': 'build'}
+[5.972263] (cmake_helpers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers', '--', '-j4', '-l4'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[6.064324] (-) TimerEvent: {}
+[6.102302] (cmake_helpers) CommandEnded: {'returncode': 0}
+[6.164700] (-) TimerEvent: {}
+[6.185084] (cmake_helpers) JobProgress: {'identifier': 'cmake_helpers', 'progress': 'install'}
+[6.223593] (cmake_helpers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/cmake_helpers'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[6.255227] (cmake_helpers) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[6.258521] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/package.xml\n'}
+[6.260757] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/helpers.cmake\n'}
+[6.263551] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules\n'}
+[6.268379] (-) TimerEvent: {}
+[6.270495] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2.cmake\n'}
+[6.273139] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_ttf.cmake\n'}
+[6.273589] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_image.cmake\n'}
+[6.274079] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindSDL2_mixer.cmake\n'}
+[6.274203] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/find_modules/FindIWYU.cmake\n'}
+[6.274311] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/ament_index/resource_index/package_run_dependencies/cmake_helpers\n'}
+[6.274414] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/ament_index/resource_index/parent_prefix_path/cmake_helpers\n'}
+[6.274594] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/environment/ament_prefix_path.sh\n'}
+[6.274746] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/environment/ament_prefix_path.dsv\n'}
+[6.276276] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/environment/path.sh\n'}
+[6.279476] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/environment/path.dsv\n'}
+[6.280261] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/local_setup.bash\n'}
+[6.287019] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/local_setup.sh\n'}
+[6.287577] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/local_setup.zsh\n'}
+[6.289447] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/local_setup.dsv\n'}
+[6.289679] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/package.dsv\n'}
+[6.289875] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/ament_index/resource_index/packages/cmake_helpers\n'}
+[6.290460] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/cmake_helpersConfig.cmake\n'}
+[6.291296] (cmake_helpers) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake/cmake_helpersConfig-version.cmake\n'}
+[6.293707] (cmake_helpers) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/package.xml\n'}
+[6.294547] (cmake_helpers) CommandEnded: {'returncode': 0}
+[6.374231] (-) TimerEvent: {}
+[6.414428] (cmake_helpers) JobEnded: {'identifier': 'cmake_helpers', 'rc': 0}
+[6.416727] (utils) JobStarted: {'identifier': 'utils'}
+[6.450475] (utils) JobProgress: {'identifier': 'utils', 'progress': 'cmake'}
+[6.450841] (utils) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2-user/ros2_workspace/robotics-v1/src/lib/utils', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/g++', '-DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/utils'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/utils', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[6.475098] (-) TimerEvent: {}
+[6.576401] (-) TimerEvent: {}
+[6.648427] (utils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[6.660905] (utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++\n'}
+[6.677191] (-) TimerEvent: {}
+[6.778003] (-) TimerEvent: {}
+[6.879490] (-) TimerEvent: {}
+[6.880041] (utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ -- works\n'}
+[6.882715] (utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.017566] (-) TimerEvent: {}
+[7.120688] (-) TimerEvent: {}
+[7.130448] (utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.160447] (utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.163361] (utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.166257] (utils) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[7.202982] (utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[7.221571] (-) TimerEvent: {}
+[7.323364] (-) TimerEvent: {}
+[7.429226] (-) TimerEvent: {}
+[7.438327] (utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[7.439829] (utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.529837] (-) TimerEvent: {}
+[7.630748] (-) TimerEvent: {}
+[7.727623] (utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[7.727927] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[7.732304] (-) TimerEvent: {}
+[7.834701] (-) TimerEvent: {}
+[7.937208] (-) TimerEvent: {}
+[7.984885] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[7.985581] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[8.037936] (-) TimerEvent: {}
+[8.138926] (-) TimerEvent: {}
+[8.215175] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[8.217835] (utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.234777] (utils) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[8.239073] (-) TimerEvent: {}
+[8.312380] (utils) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[8.313482] (utils) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.351344] (-) TimerEvent: {}
+[8.468151] (-) TimerEvent: {}
+[8.579815] (-) TimerEvent: {}
+[8.684583] (-) TimerEvent: {}
+[8.807167] (-) TimerEvent: {}
+[8.924317] (-) TimerEvent: {}
+[9.022883] (utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.045938] (utils) StdoutLine: {'line': b'-- Generating done\n'}
+[9.046214] (-) TimerEvent: {}
+[9.051173] (utils) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/utils\n'}
+[9.056712] (utils) CommandEnded: {'returncode': 0}
+[9.078107] (utils) JobProgress: {'identifier': 'utils', 'progress': 'build'}
+[9.078677] (utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2-user/ros2_workspace/robotics-v1/build/utils', '--', '-j4', '-l4'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/utils', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[9.167996] (utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[9.168329] (-) TimerEvent: {}
+[9.206809] (utils) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/common/CircularBuffer.cpp.o\x1b[0m\n'}
+[9.210134] (utils) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/common/Crc.cpp.o\x1b[0m\n'}
+[9.210421] (utils) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/IntegerUtils.cpp.o\x1b[0m\n'}
+[9.223475] (utils) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/FloatingPointUtils.cpp.o\x1b[0m\n'}
+[9.302703] (-) TimerEvent: {}
+[9.370675] (utils) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/data_type/StringUtils.cpp.o\x1b[0m\n'}
+[9.403308] (utils) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/debug/SignalHandler.cpp.o\x1b[0m\n'}
+[9.403574] (-) TimerEvent: {}
+[9.485221] (utils) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/debug/StackTrace.cpp.o\x1b[0m\n'}
+[9.581418] (-) TimerEvent: {}
+[9.665403] (utils) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Color.cpp.o\x1b[0m\n'}
+[9.794534] (-) TimerEvent: {}
+[9.845478] (utils) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Margin.cpp.o\x1b[0m\n'}
+[9.869003] (utils) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Point.cpp.o\x1b[0m\n'}
+[10.083847] (-) TimerEvent: {}
+[10.187687] (-) TimerEvent: {}
+[10.206855] (utils) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o\x1b[0m\n'}
+[10.288764] (-) TimerEvent: {}
+[10.295373] (utils) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/drawing/WidgetAligner.cpp.o\x1b[0m\n'}
+[10.390193] (-) TimerEvent: {}
+[10.491910] (-) TimerEvent: {}
+[10.567377] (utils) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/file/IniFileParser.cpp.o\x1b[0m\n'}
+[10.594777] (-) TimerEvent: {}
+[10.683085] (utils) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/file_system/FileSystemUtils.cpp.o\x1b[0m\n'}
+[10.710028] (utils) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/time/Time.cpp.o\x1b[0m\n'}
+[10.710427] (-) TimerEvent: {}
+[11.028224] (utils) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/rng/Rng.cpp.o\x1b[0m\n'}
+[11.028577] (-) TimerEvent: {}
+[11.198867] (utils) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/src/log/Log.cpp.o\x1b[0m\n'}
+[11.199125] (-) TimerEvent: {}
+[11.929792] (-) TimerEvent: {}
+[12.066984] (-) TimerEvent: {}
+[12.172067] (-) TimerEvent: {}
+[12.273529] (-) TimerEvent: {}
+[12.375621] (-) TimerEvent: {}
+[12.479098] (-) TimerEvent: {}
+[12.605397] (-) TimerEvent: {}
+[12.662127] (utils) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[12.707884] (-) TimerEvent: {}
+[12.814391] (-) TimerEvent: {}
+[12.922552] (-) TimerEvent: {}
+[12.949180] (utils) StdoutLine: {'line': b'[100%] Built target utils\n'}
+[12.988883] (utils) CommandEnded: {'returncode': 0}
+[13.023494] (-) TimerEvent: {}
+[13.124249] (-) TimerEvent: {}
+[13.221012] (utils) JobProgress: {'identifier': 'utils', 'progress': 'install'}
+[13.221477] (utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2-user/ros2_workspace/robotics-v1/build/utils'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/utils', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[13.224300] (-) TimerEvent: {}
+[13.240882] (utils) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[13.243217] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/package.xml\n'}
+[13.243430] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/utils/libutils.a\n'}
+[13.252527] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/ament_index/resource_index/packages/utils\n'}
+[13.254653] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/hook/ament_prefix_path.dsv\n'}
+[13.255419] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/hook/ros_package_path.dsv\n'}
+[13.258123] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/ament_index/resource_index/package_run_dependencies/utils\n'}
+[13.260401] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/ament_index/resource_index/parent_prefix_path/utils\n'}
+[13.260792] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/environment/ament_prefix_path.sh\n'}
+[13.262072] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/environment/ament_prefix_path.dsv\n'}
+[13.262545] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/environment/path.sh\n'}
+[13.263023] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/environment/path.dsv\n'}
+[13.264222] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/local_setup.bash\n'}
+[13.265219] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/local_setup.sh\n'}
+[13.265972] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/local_setup.zsh\n'}
+[13.267296] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/local_setup.dsv\n'}
+[13.268656] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/package.dsv\n'}
+[13.269682] (utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/ament_index/resource_index/packages/utils\n'}
+[13.270185] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/cmake/utilsConfig.cmake\n'}
+[13.271335] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/cmake/utilsConfig-version.cmake\n'}
+[13.273530] (utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/share/utils/package.xml\n'}
+[13.277147] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/libutils.a\n'}
+[13.285990] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include\n'}
+[13.287811] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils\n'}
+[13.288213] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/drawing\n'}
+[13.289568] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/drawing/Rectangle.h\n'}
+[13.290023] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/drawing/WidgetAligner.h\n'}
+[13.290941] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/drawing/Margin.h\n'}
+[13.291117] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/drawing/Point.h\n'}
+[13.291852] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/drawing/Color.h\n'}
+[13.292823] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/rng\n'}
+[13.305995] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/rng/Rng.h\n'}
+[13.306806] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/ErrorCode.h\n'}
+[13.307960] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/concurrency\n'}
+[13.308127] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/concurrency/ThreadSafeQueue.h\n'}
+[13.308268] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/file\n'}
+[13.308377] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/file/IniFileParser.h\n'}
+[13.308480] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/data_type\n'}
+[13.308580] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/data_type/FloatingPoint.h\n'}
+[13.308678] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/data_type/StringUtils.h\n'}
+[13.308774] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/data_type/FloatingPointUtils.h\n'}
+[13.308871] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/data_type/IntegerUtils.h\n'}
+[13.308967] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/data_type/EnumClassUtils.h\n'}
+[13.309097] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/Log.h\n'}
+[13.309287] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/LimitValues.h\n'}
+[13.309393] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/debug\n'}
+[13.309491] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/debug/StackTrace.h\n'}
+[13.309589] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/debug/FunctionTracer.h\n'}
+[13.309685] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/debug/SignalHandler.h\n'}
+[13.310311] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/common\n'}
+[13.311702] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/common/CircularBuffer.h\n'}
+[13.312107] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/common/defines\n'}
+[13.312363] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/common/defines/SymbolNameDefines.h\n'}
+[13.313801] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/common/AutoCircularBuffer.h\n'}
+[13.315901] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/common/Crc.h\n'}
+[13.316321] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/class\n'}
+[13.316596] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/class/NonMoveable.h\n'}
+[13.317283] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/class/NonCopyable.h\n'}
+[13.318311] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/time\n'}
+[13.318975] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/time/Time.h\n'}
+[13.319891] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/file_system\n'}
+[13.324879] (-) TimerEvent: {}
+[13.326464] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/include/utils/file_system/FileSystemUtils.h\n'}
+[13.327044] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/cmake/utils/utilsTargets.cmake\n'}
+[13.327435] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/cmake/utils/utilsTargets-debug.cmake\n'}
+[13.328057] (utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/cmake/utils/utilsConfig.cmake\n'}
+[13.328345] (utils) CommandEnded: {'returncode': 0}
+[13.425921] (-) TimerEvent: {}
+[13.526908] (-) TimerEvent: {}
+[13.585799] (utils) JobEnded: {'identifier': 'utils', 'rc': 0}
+[13.588094] (resource_utils) JobStarted: {'identifier': 'resource_utils'}
+[13.609218] (resource_utils) JobProgress: {'identifier': 'resource_utils', 'progress': 'cmake'}
+[13.613647] (resource_utils) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2-user/ros2_workspace/robotics-v1/src/lib/resource_utils', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/g++', '-DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[13.628000] (-) TimerEvent: {}
+[13.769819] (-) TimerEvent: {}
+[13.796034] (resource_utils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[13.812299] (resource_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++\n'}
+[13.870131] (-) TimerEvent: {}
+[13.970801] (-) TimerEvent: {}
+[14.061868] (resource_utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ -- works\n'}
+[14.071724] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.072117] (-) TimerEvent: {}
+[14.173830] (-) TimerEvent: {}
+[14.275344] (-) TimerEvent: {}
+[14.374976] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[14.375918] (-) TimerEvent: {}
+[14.412308] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[14.413265] (resource_utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[14.416047] (resource_utils) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[14.432674] (resource_utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[14.477544] (-) TimerEvent: {}
+[14.578216] (-) TimerEvent: {}
+[14.660236] (resource_utils) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[14.662036] (resource_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[14.678781] (-) TimerEvent: {}
+[14.780466] (-) TimerEvent: {}
+[14.881455] (-) TimerEvent: {}
+[14.921548] (resource_utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[14.922514] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[14.981786] (-) TimerEvent: {}
+[15.083204] (-) TimerEvent: {}
+[15.145007] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[15.145424] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[15.193455] (-) TimerEvent: {}
+[15.294994] (-) TimerEvent: {}
+[15.397485] (-) TimerEvent: {}
+[15.409233] (resource_utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[15.411045] (resource_utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.420256] (resource_utils) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[15.491889] (resource_utils) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[15.492228] (resource_utils) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[15.497967] (-) TimerEvent: {}
+[15.600737] (-) TimerEvent: {}
+[15.703166] (-) TimerEvent: {}
+[15.803887] (-) TimerEvent: {}
+[15.905214] (-) TimerEvent: {}
+[16.005943] (-) TimerEvent: {}
+[16.108464] (-) TimerEvent: {}
+[16.198288] (resource_utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.220470] (resource_utils) StdoutLine: {'line': b'-- Generating done\n'}
+[16.221492] (-) TimerEvent: {}
+[16.229342] (resource_utils) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils\n'}
+[16.238240] (resource_utils) CommandEnded: {'returncode': 0}
+[16.240456] (resource_utils) JobProgress: {'identifier': 'resource_utils', 'progress': 'build'}
+[16.249151] (resource_utils) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils', '--', '-j4', '-l4'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[16.322268] (-) TimerEvent: {}
+[16.369699] (resource_utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target resource_utils\x1b[0m\n'}
+[16.404875] (resource_utils) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/common/ResourceFileHeader.cpp.o\x1b[0m\n'}
+[16.412134] (resource_utils) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/defines/SoundDefines.cpp.o\x1b[0m\n'}
+[16.413207] (resource_utils) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/CombinedStructs.cpp.o\x1b[0m\n'}
+[16.423243] (-) TimerEvent: {}
+[16.451104] (resource_utils) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/resource_loader/ResourceLoader.cpp.o\x1b[0m\n'}
+[17.072051] (-) TimerEvent: {}
+[17.160634] (resource_utils) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/DataHeader.cpp.o\x1b[0m\n'}
+[17.172672] (-) TimerEvent: {}
+[17.276702] (-) TimerEvent: {}
+[17.342255] (resource_utils) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/ResourceData.cpp.o\x1b[0m\n'}
+[17.385104] (-) TimerEvent: {}
+[17.464865] (resource_utils) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/FontData.cpp.o\x1b[0m\n'}
+[17.785710] (-) TimerEvent: {}
+[17.962846] (-) TimerEvent: {}
+[18.065244] (-) TimerEvent: {}
+[18.085075] (resource_utils) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/resource_utils.dir/src/structs/SoundData.cpp.o\x1b[0m\n'}
+[18.165619] (-) TimerEvent: {}
+[18.267944] (-) TimerEvent: {}
+[18.372412] (-) TimerEvent: {}
+[18.833321] (-) TimerEvent: {}
+[18.936470] (-) TimerEvent: {}
+[18.968135] (resource_utils) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libresource_utils.a\x1b[0m\n'}
+[19.042637] (-) TimerEvent: {}
+[19.143190] (-) TimerEvent: {}
+[19.164333] (resource_utils) StdoutLine: {'line': b'[100%] Built target resource_utils\n'}
+[19.220016] (resource_utils) CommandEnded: {'returncode': 0}
+[19.243739] (-) TimerEvent: {}
+[19.345031] (-) TimerEvent: {}
+[19.406803] (resource_utils) JobProgress: {'identifier': 'resource_utils', 'progress': 'install'}
+[19.407341] (resource_utils) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_utils'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[19.430194] (resource_utils) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[19.432601] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/package.xml\n'}
+[19.433750] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/resource_utils/libresource_utils.a\n'}
+[19.439012] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/ament_index/resource_index/packages/resource_utils\n'}
+[19.440303] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/hook/ament_prefix_path.dsv\n'}
+[19.441052] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/hook/ros_package_path.dsv\n'}
+[19.441915] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/ament_index/resource_index/package_run_dependencies/resource_utils\n'}
+[19.442915] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/ament_index/resource_index/parent_prefix_path/resource_utils\n'}
+[19.444075] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/environment/ament_prefix_path.sh\n'}
+[19.445402] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/environment/ament_prefix_path.dsv\n'}
+[19.445574] (-) TimerEvent: {}
+[19.446884] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/environment/path.sh\n'}
+[19.447735] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/environment/path.dsv\n'}
+[19.448718] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/local_setup.bash\n'}
+[19.449659] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/local_setup.sh\n'}
+[19.450562] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/local_setup.zsh\n'}
+[19.451875] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/local_setup.dsv\n'}
+[19.452623] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/package.dsv\n'}
+[19.453531] (resource_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/ament_index/resource_index/packages/resource_utils\n'}
+[19.454328] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/cmake/resource_utilsConfig.cmake\n'}
+[19.455594] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/cmake/resource_utilsConfig-version.cmake\n'}
+[19.456994] (resource_utils) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/share/resource_utils/package.xml\n'}
+[19.457202] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/libresource_utils.a\n'}
+[19.464717] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include\n'}
+[19.465622] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils\n'}
+[19.465944] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/common\n'}
+[19.466691] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/common/ResourceFileHeader.h\n'}
+[19.468132] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/structs\n'}
+[19.468309] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/structs/FontData.h\n'}
+[19.469101] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/structs/CombinedStructs.h\n'}
+[19.469278] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/structs/SoundData.h\n'}
+[19.470178] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/structs/ResourceData.h\n'}
+[19.471092] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/structs/DataHeader.h\n'}
+[19.472447] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/defines\n'}
+[19.473381] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/defines/ResourceDefines.h\n'}
+[19.475903] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/defines/SoundDefines.h\n'}
+[19.476137] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/resource_loader\n'}
+[19.476902] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/include/resource_utils/resource_loader/ResourceLoader.h\n'}
+[19.477846] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsTargets.cmake\n'}
+[19.478819] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsTargets-debug.cmake\n'}
+[19.479924] (resource_utils) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/cmake/resource_utils/resource_utilsConfig.cmake\n'}
+[19.484906] (resource_utils) CommandEnded: {'returncode': 0}
+[19.546189] (-) TimerEvent: {}
+[19.650954] (-) TimerEvent: {}
+[19.671660] (resource_utils) JobEnded: {'identifier': 'resource_utils', 'rc': 0}
+[19.673374] (resource_builder) JobStarted: {'identifier': 'resource_builder'}
+[19.704875] (resource_builder) JobProgress: {'identifier': 'resource_builder', 'progress': 'cmake'}
+[19.705484] (resource_builder) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2-user/ros2_workspace/robotics-v1/src/tools/resource_builder', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_CXX_COMPILER=/usr/bin/g++', '-DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[19.752033] (-) TimerEvent: {}
+[19.853739] (-) TimerEvent: {}
+[19.901137] (resource_builder) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[19.911745] (resource_builder) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++\n'}
+[19.954457] (-) TimerEvent: {}
+[20.057215] (-) TimerEvent: {}
+[20.170064] (resource_builder) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ -- works\n'}
+[20.170719] (-) TimerEvent: {}
+[20.171731] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[20.271939] (-) TimerEvent: {}
+[20.373034] (-) TimerEvent: {}
+[20.436195] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[20.469449] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[20.472098] (resource_builder) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[20.474295] (-) TimerEvent: {}
+[20.477473] (resource_builder) StdoutLine: {'line': b'-- Found cmake_helpers: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake)\n'}
+[20.486059] (resource_builder) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[20.575333] (-) TimerEvent: {}
+[20.678977] (-) TimerEvent: {}
+[20.772071] (resource_builder) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[20.773967] (resource_builder) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[20.779771] (-) TimerEvent: {}
+[20.880696] (-) TimerEvent: {}
+[20.981666] (-) TimerEvent: {}
+[21.025812] (resource_builder) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[21.028554] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[21.082162] (-) TimerEvent: {}
+[21.183461] (-) TimerEvent: {}
+[21.233838] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[21.235408] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[21.283864] (-) TimerEvent: {}
+[21.386003] (-) TimerEvent: {}
+[21.484057] (resource_builder) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[21.486546] (-) TimerEvent: {}
+[21.488362] (resource_builder) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[21.497060] (resource_builder) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[21.558987] (resource_builder) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[21.559368] (resource_builder) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[21.587233] (-) TimerEvent: {}
+[21.933215] (-) TimerEvent: {}
+[22.039486] (-) TimerEvent: {}
+[22.149776] (-) TimerEvent: {}
+[22.189388] (resource_builder) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.211035] (resource_builder) StdoutLine: {'line': b'-- Generating done\n'}
+[22.216764] (resource_builder) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder\n'}
+[22.224936] (resource_builder) CommandEnded: {'returncode': 0}
+[22.230621] (resource_builder) JobProgress: {'identifier': 'resource_builder', 'progress': 'build'}
+[22.232341] (resource_builder) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder', '--', '-j4', '-l4'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[22.250396] (-) TimerEvent: {}
+[22.351199] (-) TimerEvent: {}
+[22.361775] (resource_builder) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target resource_builder\x1b[0m\n'}
+[22.407763] (resource_builder) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/main.cpp.o\x1b[0m\n'}
+[22.412471] (resource_builder) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileBuilder.cpp.o\x1b[0m\n'}
+[22.423965] (resource_builder) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/FileParser.cpp.o\x1b[0m\n'}
+[22.438400] (resource_builder) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/ResourceParser.cpp.o\x1b[0m\n'}
+[22.518165] (-) TimerEvent: {}
+[22.639809] (-) TimerEvent: {}
+[23.068269] (-) TimerEvent: {}
+[23.863176] (-) TimerEvent: {}
+[23.965820] (-) TimerEvent: {}
+[24.077306] (-) TimerEvent: {}
+[24.213254] (-) TimerEvent: {}
+[24.243648] (resource_builder) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/resource_builder.dir/src/SyntaxChecker.cpp.o\x1b[0m\n'}
+[24.323848] (-) TimerEvent: {}
+[24.686689] (-) TimerEvent: {}
+[24.956140] (-) TimerEvent: {}
+[25.060785] (-) TimerEvent: {}
+[25.235191] (-) TimerEvent: {}
+[25.342192] (-) TimerEvent: {}
+[25.452662] (-) TimerEvent: {}
+[25.560316] (-) TimerEvent: {}
+[25.690285] (-) TimerEvent: {}
+[25.815120] (-) TimerEvent: {}
+[25.953780] (-) TimerEvent: {}
+[25.996370] (resource_builder) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable resource_builder\x1b[0m\n'}
+[26.072017] (-) TimerEvent: {}
+[26.213591] (-) TimerEvent: {}
+[26.306137] (resource_builder) StdoutLine: {'line': b'[100%] Built target resource_builder\n'}
+[26.314030] (-) TimerEvent: {}
+[26.351228] (resource_builder) CommandEnded: {'returncode': 0}
+[26.415466] (-) TimerEvent: {}
+[26.470806] (resource_builder) JobProgress: {'identifier': 'resource_builder', 'progress': 'install'}
+[26.472006] (resource_builder) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder'], 'cwd': '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2-user'), ('LC_TIME', 'bg_BG.UTF-8'), ('SSH_AGENT_PID', '1320'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ros2-user'), ('OLDPWD', '/home/ros2-user/ros2_workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bg_BG.UTF-8'), ('MANAGERPID', '1050'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ros2-user'), ('JOURNAL_STREAM', '8:31736'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/utils/lib/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/x86_64-linux-gnu/pkgconfig:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/lib/pkgconfig'), ('USERNAME', 'ros2-user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/ros2-user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-ros2:@/tmp/.ICE-unix/1655,unix/ubuntu-ros2:/tmp/.ICE-unix/1655'), ('INVOCATION_ID', '27e73ea16cad4a92b516dfa02ea1bb96'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bg_BG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7547f16_182a_43ee_97c8_05043ece85de'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bg_BG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bg_BG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bg_BG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'bg_BG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2-user/ros2_workspace/robotics-v1/build/resource_builder'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'bg_BG.UTF-8'), ('LC_PAPER', 'bg_BG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ros2-user/ros2_workspace/robotics-v1/install/resource_utils:/home/ros2-user/ros2_workspace/robotics-v1/install/utils:/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers:/opt/ros/foxy')]), 'shell': False}
+[26.497254] (resource_builder) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[26.498657] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/package.xml\n'}
+[26.500463] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/lib/resource_builder/resource_builder\n'}
+[26.506861] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder\n'}
+[26.507291] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/hook/ament_prefix_path.dsv\n'}
+[26.509674] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/hook/ros_package_path.dsv\n'}
+[26.512034] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/ament_index/resource_index/package_run_dependencies/resource_builder\n'}
+[26.513779] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/ament_index/resource_index/parent_prefix_path/resource_builder\n'}
+[26.515347] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.sh\n'}
+[26.515656] (-) TimerEvent: {}
+[26.517548] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/environment/ament_prefix_path.dsv\n'}
+[26.518884] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/environment/path.sh\n'}
+[26.520238] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/environment/path.dsv\n'}
+[26.521609] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/local_setup.bash\n'}
+[26.521995] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/local_setup.sh\n'}
+[26.525695] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/local_setup.zsh\n'}
+[26.526381] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/local_setup.dsv\n'}
+[26.528573] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/package.dsv\n'}
+[26.529128] (resource_builder) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/ament_index/resource_index/packages/resource_builder\n'}
+[26.529297] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig.cmake\n'}
+[26.530089] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/cmake/resource_builderConfig-version.cmake\n'}
+[26.530540] (resource_builder) StdoutLine: {'line': b'-- Up-to-date: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/share/resource_builder/package.xml\n'}
+[26.531370] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/bin/resource_builder\n'}
+[26.538301] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/include\n'}
+[26.538843] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/include/resource_builder\n'}
+[26.540011] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/include/resource_builder/ResourceParser.h\n'}
+[26.540242] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/include/resource_builder/SyntaxChecker.h\n'}
+[26.540777] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/include/resource_builder/FileBuilder.h\n'}
+[26.540984] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/include/resource_builder/FileParser.h\n'}
+[26.541870] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets.cmake\n'}
+[26.542203] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/lib/cmake/resource_builder/resource_builderTargets-debug.cmake\n'}
+[26.542509] (resource_builder) StdoutLine: {'line': b'-- Installing: /home/ros2-user/ros2_workspace/robotics-v1/install/resource_builder/lib/cmake/resource_builder/resource_builderConfig.cmake\n'}
+[26.549590] (resource_builder) CommandEnded: {'returncode': 0}
+[26.616217] (-) TimerEvent: {}
+[26.720403] (-) TimerEvent: {}
+[26.724217] (resource_builder) JobEnded: {'identifier': 'resource_builder', 'rc': 0}
+[26.727109] (-) EventReactorShutdown: {}

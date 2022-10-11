@@ -1,0 +1,1 @@
+/home/ros2-user/ros2_workspace/robotics-v1/build/ur_description/ament_cmake_core/ur_descriptionConfig-version.cmake

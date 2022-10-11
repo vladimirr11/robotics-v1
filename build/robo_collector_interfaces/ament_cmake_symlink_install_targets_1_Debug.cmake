@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros2-user/ros2_workspace/robotics-v1/build/robo_collector_interfaces/librobo_collector_interfaces__rosidl_typesupport_fastrtps_cpp.so" "TARGETS" "robo_collector_interfaces__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

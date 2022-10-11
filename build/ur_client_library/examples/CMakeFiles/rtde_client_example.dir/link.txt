@@ -1,0 +1,1 @@
+/usr/bin/g++   -Wall -pedantic -Wall -pedantic -g  -rdynamic CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o  -o rtde_client_example  -Wl,-rpath,/home/ros2-user/ros2_workspace/robotics-v1/build/ur_client_library ../liburcl.so -lpthread 

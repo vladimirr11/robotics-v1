@@ -1,0 +1,50 @@
+[0.069s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_moveit_config -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config
+[0.356s] -- The C compiler identification is GNU 9.4.0
+[0.748s] -- The CXX compiler identification is GNU 9.4.0
+[1.080s] -- Check for working C compiler: /usr/bin/cc
+[1.735s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.737s] -- Detecting C compiler ABI info
+[2.103s] -- Detecting C compiler ABI info - done
+[2.139s] -- Detecting C compile features
+[2.140s] -- Detecting C compile features - done
+[2.147s] -- Check for working CXX compiler: /usr/bin/g++
+[2.761s] -- Check for working CXX compiler: /usr/bin/g++ -- works
+[2.766s] -- Detecting CXX compiler ABI info
+[3.011s] -- Detecting CXX compiler ABI info - done
+[3.050s] -- Detecting CXX compile features
+[3.053s] -- Detecting CXX compile features - done
+[3.067s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.150s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.150s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.639s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.111s] -- Configuring done
+[4.135s] -- Generating done
+[4.137s] -- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config
+[4.362s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ros2-user/ros2_workspace/robotics-v1/src/ur_driver/Universal_Robots_ROS2_Driver/ur_moveit_config -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config
+[4.367s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config -- -j4 -l4
+[4.536s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config -- -j4 -l4
+[4.760s] Invoking command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config
+[4.792s] -- Install configuration: "Debug"
+[4.792s] -- Execute custom install script
+[4.796s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/config/controllers.yaml
+[4.821s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/config/kinematics.yaml
+[4.844s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/config/ompl_planning.yaml
+[4.872s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/rviz/view_robot.rviz
+[4.896s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/srdf/ur.srdf.xacro
+[4.926s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/srdf/ur_macro.srdf.xacro
+[4.950s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur_moveit_config
+[4.973s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur_moveit_config
+[5.005s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/environment/ament_prefix_path.sh
+[5.044s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/environment/ament_prefix_path.dsv
+[5.096s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/environment/path.sh
+[5.125s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/environment/path.dsv
+[5.163s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.bash
+[5.191s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.sh
+[5.220s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.zsh
+[5.267s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/local_setup.dsv
+[5.288s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/package.dsv
+[5.332s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ament_index/resource_index/packages/ur_moveit_config
+[5.353s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/cmake/ur_moveit_configConfig.cmake
+[5.375s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/cmake/ur_moveit_configConfig-version.cmake
+[5.402s] -- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_moveit_config/share/ur_moveit_config/package.xml
+[5.433s] Invoked command in '/home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/ros2-user/ros2_workspace/robotics-v1/build/ur_moveit_config

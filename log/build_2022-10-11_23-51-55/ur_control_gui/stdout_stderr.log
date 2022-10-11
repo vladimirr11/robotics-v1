@@ -1,0 +1,70 @@
+-- Found cmake_helpers: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/cmake_helpers/share/cmake_helpers/cmake)
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+-- Found ur_dashboard_msgs: 0.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake)
+-- Found urscript_interfaces: 1.0.0 (/home/ros2-user/ros2_workspace/robotics-v1/install/urscript_interfaces/share/urscript_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ros2-user/ros2_workspace/robotics-v1/build/ur_control_gui
+[100%] Built target ur_control_gui
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/package.xml
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui//launch/launch.py
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui//config/params.yaml
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/lib/ur_control_gui/ur_control_gui
+-- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ament_index/resource_index/packages/ur_control_gui
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/hook/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/hook/ros_package_path.dsv
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ament_index/resource_index/package_run_dependencies/ur_control_gui
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ament_index/resource_index/parent_prefix_path/ur_control_gui
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/environment/path.sh
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/environment/path.dsv
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/local_setup.bash
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/local_setup.sh
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/local_setup.zsh
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/local_setup.dsv
+-- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/package.dsv
+-- Symlinking: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ament_index/resource_index/packages/ur_control_gui
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/cmake/ur_control_guiConfig.cmake
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/cmake/ur_control_guiConfig-version.cmake
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/package.xml
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//UrControlGui.rsrc
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//f/vinque_rg_30.ttf
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//f/vinque_rg_45.ttf
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//generated/UrControlGuiResources.h
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//generated/UrControlGuiResourcesDynamic.h
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//generated/UrControlGuiResourcesDynamicValues.h
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//generated/fonts.bin
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//generated/resources.bin
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//generated/sounds.bin
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/background/background.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/background/ur.jpg
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/buttons/help_button.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/buttons/left_button.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/buttons/right_button.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/buttons/settings_button.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/buttons/up_button.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//p/icons/UR_logo.png
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command00.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command01.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command02.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command03.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command04.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command05.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command06.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command07.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command08.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command09.script
+-- Up-to-date symlink: /home/ros2-user/ros2_workspace/robotics-v1/install/ur_control_gui/share/ur_control_gui/resources//scripts/command10.script

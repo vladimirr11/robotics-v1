@@ -1,0 +1,1 @@
+/usr/bin/g++   -Wall -pedantic -Wall -pedantic -g  -rdynamic CMakeFiles/driver_example.dir/full_driver.cpp.o  -o driver_example  -Wl,-rpath,/home/ros2-user/ros2_workspace/robotics-v1/build/ur_client_library ../liburcl.so -lpthread 
