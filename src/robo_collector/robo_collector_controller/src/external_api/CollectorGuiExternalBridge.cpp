@@ -38,9 +38,6 @@ void CollectorGuiExternalBridge::publishToggleHelpPage() const {
 }
 
 void CollectorGuiExternalBridge::publishRobotAct([[maybe_unused]] MoveType moveType) const {
-    // LOGR("Oh no ... nothing happened ... and the buttons remained locked. "
-    //     "Maybe something will unlock them externally?");
-
     const auto f = [this]() -> void { _outInterface.enablePlayerInputCb(); };
     _outInterface.invokeActionEventCb(f, ActionEventType::NON_BLOCKING);
 
