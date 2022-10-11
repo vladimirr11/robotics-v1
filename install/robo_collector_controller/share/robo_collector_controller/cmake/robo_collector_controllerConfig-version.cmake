@@ -1,1 +1,0 @@
-/home/ros2-user/ros2_workspace/robotics-v1/build/robo_collector_controller/ament_cmake_core/robo_collector_controllerConfig-version.cmake

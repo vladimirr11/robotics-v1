@@ -1,1 +1,0 @@
-/home/ros2-user/ros2_workspace/robotics-v1/src/ur_dev/urscript/urscript_common/include/urscript_common/message_helpers/UrScriptMessageHelpers.h

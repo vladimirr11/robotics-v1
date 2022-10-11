@@ -1,2 +1,0 @@
-
-BatteryStatus battery_status

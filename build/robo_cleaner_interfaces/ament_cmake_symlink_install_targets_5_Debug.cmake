@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros2-user/ros2_workspace/robotics-v1/build/robo_cleaner_interfaces/rosidl_generator_py/robo_cleaner_interfaces/librobo_cleaner_interfaces__python.so" "TARGETS" "robo_cleaner_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

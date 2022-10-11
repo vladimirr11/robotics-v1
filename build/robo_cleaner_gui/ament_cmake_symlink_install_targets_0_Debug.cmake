@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros2-user/ros2_workspace/robotics-v1/build/robo_cleaner_gui/robo_cleaner_gui" "TARGETS" "robo_cleaner_gui" "DESTINATION" "lib/robo_cleaner_gui")

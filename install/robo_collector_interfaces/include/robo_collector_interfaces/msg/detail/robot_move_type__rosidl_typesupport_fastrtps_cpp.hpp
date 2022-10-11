@@ -1,1 +1,0 @@
-/home/ros2-user/ros2_workspace/robotics-v1/build/robo_collector_interfaces/rosidl_typesupport_fastrtps_cpp/robo_collector_interfaces/msg/detail/robot_move_type__rosidl_typesupport_fastrtps_cpp.hpp

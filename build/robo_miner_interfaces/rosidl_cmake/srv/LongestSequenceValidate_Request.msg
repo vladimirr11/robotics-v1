@@ -1,1 +1,0 @@
-FieldPoint[] sequence_points

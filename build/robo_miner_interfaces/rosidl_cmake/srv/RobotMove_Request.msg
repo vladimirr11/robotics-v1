@@ -1,1 +1,0 @@
-RobotMoveType robot_move_type

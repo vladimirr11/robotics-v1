@@ -1,5 +1,0 @@
-
-bool success
-string error_reason
-BatteryStatus battery_status
-int32 turns_spend_charging

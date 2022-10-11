@@ -1,2 +1,0 @@
-
-RobotPositionResponse robot_position_response

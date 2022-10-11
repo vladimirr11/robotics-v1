@@ -1,4 +1,0 @@
-
-bool success
-string error_reason
-InitialRobotState initial_robot_state

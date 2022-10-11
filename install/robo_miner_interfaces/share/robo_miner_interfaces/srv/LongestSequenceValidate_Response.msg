@@ -1,1 +1,0 @@
-/home/ros2-user/ros2_workspace/robotics-v1/build/robo_miner_interfaces/rosidl_cmake/srv/LongestSequenceValidate_Response.msg

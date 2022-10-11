@@ -1,1 +1,0 @@
-/home/ros2-user/ros2_workspace/robotics-v1/build/robo_miner_interfaces/ament_cmake_environment_hooks/local_setup.sh

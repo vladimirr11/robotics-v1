@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros2-user/ros2_workspace/robotics-v1/build/robo_collector_controller/robo_collector_controller" "TARGETS" "robo_collector_controller" "DESTINATION" "lib/robo_collector_controller")
