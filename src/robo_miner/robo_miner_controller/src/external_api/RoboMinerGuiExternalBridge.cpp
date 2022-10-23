@@ -47,10 +47,12 @@ ErrorCode RoboMinerGuiExternalBridge::init(const RoboMinerControllerRos2Params& 
 }
 
 ErrorCode RoboMinerGuiExternalBridge::run() {
+    auto init_crystal_type = _queryInitRobotPos();
+
     std::shared_ptr<RobotMove::Request> robot_rotate_req = std::make_shared<RobotMove::Request>();
     auto robotate_rotate_req = _rotateRobot(ROTATE_LEFT);
 
-    _revealMap(robotate_rotate_req);
+    _revealMap(init_crystal_type, robotate_rotate_req);
 
     return ErrorCode::SUCCESS;
 }
@@ -137,7 +139,7 @@ std::pair<uint32_t, uint32_t> RoboMinerGuiExternalBridge::_findColumnsDistance(
                           static_cast<uint32_t>(right_col));
 }
 
-void RoboMinerGuiExternalBridge::_revealMap(RobotMoveResponse moveDirPtr) {
+void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType, RobotMoveResponse moveDirPtr) {
     std::stack<RobotMoveResponse> robot_move_ptr_stack;
     robot_move_ptr_stack.push(moveDirPtr);
 
@@ -148,11 +150,9 @@ void RoboMinerGuiExternalBridge::_revealMap(RobotMoveResponse moveDirPtr) {
     std::set<FieldPos> field_pos_set;
     field_pos_set.insert(start_pos);
 
-    auto init_crystal_type = _queryInitRobotPos();
-
     MapReconstructor map_reconstructor;
     MapDimension init_map_dim;
-    map_reconstructor.update_map(start_pos, init_crystal_type, init_map_dim);
+    map_reconstructor.update_map(start_pos, initPosCrystalType, init_map_dim);
     while (!robot_move_ptr_stack.empty()) {
         auto curr_move_dir_response = robot_move_ptr_stack.top();
         robot_move_ptr_stack.pop();

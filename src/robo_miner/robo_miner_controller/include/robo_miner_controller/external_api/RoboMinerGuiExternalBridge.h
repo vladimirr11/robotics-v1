@@ -46,7 +46,7 @@ private:
 
     void _publishUserAuthenticate(const UserData& data);
 
-    void _revealMap(RobotMoveResponse moveDirPtr);
+    void _revealMap(const uint8_t initPosCrystalType, RobotMoveResponse moveDirPtr);
 
     uint8_t _queryInitRobotPos() const;
 
