@@ -52,7 +52,15 @@ ErrorCode RoboMinerGuiExternalBridge::run() {
     std::shared_ptr<RobotMove::Request> robot_rotate_req = std::make_shared<RobotMove::Request>();
     auto robotate_rotate_req = _rotateRobot(ROTATE_LEFT);
 
-    _revealMap(init_crystal_type, robotate_rotate_req);
+    auto path_validator = std::make_shared<LongestCrystalPathValidator>();
+    if (ErrorCode::SUCCESS != path_validator->init()) {
+        LOGERR("Error, LongestCrystalPathValidator::init() failed");
+        return ErrorCode::FAILURE;
+    }
+
+    _revealMap(init_crystal_type, robotate_rotate_req, path_validator);
+
+    path_validator->validate();
 
     return ErrorCode::SUCCESS;
 }
@@ -139,7 +147,9 @@ std::pair<uint32_t, uint32_t> RoboMinerGuiExternalBridge::_findColumnsDistance(
                           static_cast<uint32_t>(right_col));
 }
 
-void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType, RobotMoveResponse moveDirPtr) {
+void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType,
+                                            RobotMoveResponse moveDirPtr,
+                                            PathVallidatorPtr pathValidator) {
     std::stack<RobotMoveResponse> robot_move_ptr_stack;
     robot_move_ptr_stack.push(moveDirPtr);
 
@@ -176,6 +186,7 @@ void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType, Ro
         }
 
         if (_validateMap(map_dim.rows, map_dim.cols, map_reconstructor.get_data())) {
+            pathValidator->collect_crystals(map_reconstructor.get_crystals_pos());
             return;
         }
 

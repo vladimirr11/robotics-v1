@@ -21,7 +21,6 @@ def generate_launch_description():
         package=node_name,
         executable=node_name,
         output='screen',
-        # prefix=['gdbserver localhost:3000'],
         emulate_tty=True,
         parameters=[config]
     )

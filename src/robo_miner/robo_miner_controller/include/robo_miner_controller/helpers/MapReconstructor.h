@@ -12,6 +12,7 @@
 class MapReconstructor {
 private:
     using DataVec = std::vector<uint8_t>;
+    using CrystalsPosVec  = std::vector<std::pair<uint8_t, FieldPos>>;
 
 public:
     MapReconstructor() = default;
@@ -22,13 +23,15 @@ public:
 
     DataVec get_data() const;
 
+    CrystalsPosVec get_crystals_pos();
+
 private:
     int32_t _calcActualRow(const FieldPos& fieldPos) const;
 
     int32_t _calcActualCol(const FieldPos& fieldPos) const;
 
 private:
-    std::vector<std::pair<FieldPos, uint8_t>> _mapValidatorVec;
+    CrystalsPosVec _crystalsPosVec;
     MapDimension _mapDimens;
     DataVec _reconstructedMap;
 };

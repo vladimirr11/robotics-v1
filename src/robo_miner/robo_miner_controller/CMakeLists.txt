@@ -28,10 +28,12 @@ add_executable(
         ${_INC_DIR}/helpers/MapReconstructor.h
 	    ${_INC_DIR}/helpers/RoboMinerHelperDefines.h
 	    ${_INC_DIR}/external_api/RoboMinerGuiExternalBridge.h
+	    ${_INC_DIR}/external_api/LongestCrystalPathValidator.h
 	    ${_INC_DIR}/external_api/RoboMinerControllerRos2ParamProvider.h
 
 		${_SRC_DIR}/helpers/MapReconstructor.cpp
 		${_SRC_DIR}/external_api/RoboMinerGuiExternalBridge.cpp
+		${_SRC_DIR}/external_api/LongestCrystalPathValidator.cpp
 		${_SRC_DIR}/external_api/RoboMinerControllerRos2ParamProvider.cpp
 		${_SRC_DIR}/main.cpp
 )
