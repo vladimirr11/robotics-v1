@@ -16,7 +16,6 @@
 #include "robo_common/layout/field/FieldPos.h"
 #include "robo_miner_common/defines/RoboMinerTopics.h"
 #include "robo_miner_interfaces/msg/robot_position_response.hpp"
-#include "robo_miner_interfaces/srv/activate_mining_validate.hpp"
 #include "robo_miner_interfaces/srv/longest_sequence_validate.hpp"
 #include "robo_miner_interfaces/srv/robot_move.hpp"
 #include "utils/ErrorCode.h"
@@ -32,6 +31,10 @@ public:
 
     void validate() const;
 
+    FieldPos get_start_pos() const;
+
+    uint8_t get_target_crystal_type() const;
+
 private:
     using FieldPoint = robo_miner_interfaces::msg::FieldPoint;
 
@@ -42,13 +45,11 @@ private:
 private:
     using RobotMove = robo_miner_interfaces::srv::RobotMove;
     using LongestSequenceValidate = robo_miner_interfaces::srv::LongestSequenceValidate;
-    using ActivateMiningValidate = robo_miner_interfaces::srv::ActivateMiningValidate;
     using CrystalType = uint8_t;
 
 private:
     rclcpp::Client<RobotMove>::SharedPtr _robotMoveClient;
     rclcpp::Client<LongestSequenceValidate>::SharedPtr _longestSequenceValidateClient;
-    rclcpp::Client<ActivateMiningValidate>::SharedPtr _activateMiningValidateClient;
 
     const rclcpp::CallbackGroup::SharedPtr _publishersCallbackGroup =
         create_callback_group(rclcpp::CallbackGroupType::Reentrant);

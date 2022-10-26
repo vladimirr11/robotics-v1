@@ -22,6 +22,7 @@
 #include "robo_miner_controller/helpers/RoboMinerHelperDefines.h"
 #include "robo_miner_interfaces/msg/robot_position_response.hpp"
 #include "robo_miner_interfaces/msg/user_authenticate.hpp"
+#include "robo_miner_interfaces/srv/activate_mining_validate.hpp"
 #include "robo_miner_interfaces/srv/field_map_validate.hpp"
 #include "robo_miner_interfaces/srv/query_initial_robot_position.hpp"
 #include "robo_miner_interfaces/srv/robot_move.hpp"
@@ -43,7 +44,7 @@ private:
     void _publishUserAuthenticate(const UserData& data);
 
     void _revealMap(const uint8_t initPosCrystalType, RobotMoveResponse moveDirPtr,
-                    PathVallidatorPtr pathValidator);
+                    PathVallidatorPtr pathValidator, MapReconstructor& reconstructor);
 
     uint8_t _queryInitRobotPos() const;
 
@@ -78,12 +79,26 @@ private:
     bool _shouldRotate(const RobotMoveResponse& moveDirPtr, const FieldPos& visitedPos,
                        const std::set<FieldPos>& fieldPosSet) const;
 
+    std::vector<FieldPos> _findShortestPathToStartMiningPos(MapReconstructor& reconstructor,
+                                                            const FieldPos& targetPos);
+
+    bool _canVisit(const std::vector<std::vector<int32_t>>& map, const FieldPos& pos) const;
+
+    void _goToStartMiningPos(const std::vector<FieldPos>& path,
+                             MapReconstructor& reconstructor) const;
+
+    void _adjustRobotDir(const FieldPos& currPos, const FieldPos& targetPos, int32_t currDir) const;
+
+    void _mineCrystalPath([[maybe_unused]] MapReconstructor& reconstructor, const FieldPos& currPos,
+                          const uint8_t targetCrystal) const;
+
 private:
     using Empty = std_msgs::msg::Empty;
     using String = std_msgs::msg::String;
     using UserAuthenticate = robo_miner_interfaces::msg::UserAuthenticate;
     using UInt8MultiArray = robo_miner_interfaces::msg::UInt8MultiArray;
     using RobotMove = robo_miner_interfaces::srv::RobotMove;
+    using ActivateMiningValidate = robo_miner_interfaces::srv::ActivateMiningValidate;
     using QueryInitialRobotPosition = robo_miner_interfaces::srv::QueryInitialRobotPosition;
     using FieldMapValidate = robo_miner_interfaces::srv::FieldMapValidate;
 
@@ -91,6 +106,7 @@ private:
     rclcpp::Client<QueryInitialRobotPosition>::SharedPtr _initialRobotPosClient;
     rclcpp::Client<RobotMove>::SharedPtr _robotMoveClient;
     rclcpp::Client<FieldMapValidate>::SharedPtr _fieldMapValidateClient;
+    rclcpp::Client<ActivateMiningValidate>::SharedPtr _activateMiningValidateClient;
 
     rclcpp::Publisher<UserAuthenticate>::SharedPtr _userAuthenticatePublisher;
     rclcpp::Publisher<Empty>::SharedPtr _toggleHelpPagePublisher;

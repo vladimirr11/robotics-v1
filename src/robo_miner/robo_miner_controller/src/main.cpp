@@ -27,28 +27,11 @@ int32_t main(int32_t argc, char** argv) {
     }
 
     std::thread spin_thread([&node]() { rclcpp::spin(node); });
-    
-    // auto node2 = std::make_shared<LongestCrystalPathValidator>();
-
-    // rclcpp::executors::SingleThreadedExecutor exec;
-    // rclcpp::NodeOptions options;
-    // exec.add_node(node);
-    // exec.add_node(node2);
 
     if (ErrorCode::SUCCESS != node->run()) {
         LOGERR("RoboMinerGuiExternalBridge::run() failed");
         return EXIT_FAILURE;
     }
-
-    // // Add some nodes to the executor which provide work for the executor during its "spin"
-    // // function. An example of available work is executing a subscription callback, or a timer
-    // // callback.
-    // exec.add_node(node);
-    // exec.add_node(node2);
-
-    // // spin will block until work comes in, execute work as it becomes available, and keep blocking.
-    // // It will only be interrupted by Ctrl-C.
-    // exec.spin();
 
     rclcpp::shutdown();
     spin_thread.join();

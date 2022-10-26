@@ -37,12 +37,35 @@ void LongestCrystalPathValidator::validate() const {
     using ServiceResponseFuture = rclcpp::Client<LongestSequenceValidate>::SharedFuture;
     auto response_received_callback = [this]([[maybe_unused]] ServiceResponseFuture future) {
         LOGY("ServiceResponseFuture called");
+        // LOGY("SUCCESS = [%d]", future.get()->success);
     };
 
     auto longest_path_result = _longestSequenceValidateClient->async_send_request(
         longest_path_req, response_received_callback);
 
     response_received_callback(longest_path_result);
+}
+
+FieldPos LongestCrystalPathValidator::get_start_pos() const {
+    auto longest_crystal_path = _get_longest_crystal_path();
+    std::sort(longest_crystal_path.begin(), longest_crystal_path.end(),
+              [](const FieldPos& p1, const FieldPos& p2) {
+                  if (p1.col == p2.col) {
+                      return p1.row < p2.row;
+                  }
+                  return p1.col < p2.col;
+              });
+
+    return *longest_crystal_path.begin();
+}
+
+uint8_t LongestCrystalPathValidator::get_target_crystal_type() const {
+    using pair_type = std::pair<uint8_t, std::vector<FieldPos>>;
+    const auto longets_path = *std::max_element(_crystalsMap.begin(), _crystalsMap.end(),
+                                                [](const pair_type& p1, const pair_type& p2) {
+                                                    return p1.second.size() < p2.second.size();
+                                                });
+    return longets_path.first;
 }
 
 std::vector<FieldPos> LongestCrystalPathValidator::_get_longest_crystal_path() const {

@@ -3,6 +3,9 @@
 
 // C++ System headers
 #include <algorithm>
+#include <array>
+#include <map>
+#include <queue>
 #include <thread>
 
 // Other libraries headers
@@ -43,6 +46,10 @@ ErrorCode RoboMinerGuiExternalBridge::init(const RoboMinerControllerRos2Params& 
     _fieldMapValidateClient = create_client<FieldMapValidate>(
         FIELD_MAP_VALIDATE_SERVICE, rmw_qos_profile_services_default, _publishersCallbackGroup);
 
+    _activateMiningValidateClient = create_client<ActivateMiningValidate>(
+        ACTIVATE_MINING_VALIDATE_SERVICE, rmw_qos_profile_services_default,
+        _publishersCallbackGroup);
+
     return ErrorCode::SUCCESS;
 }
 
@@ -58,9 +65,18 @@ ErrorCode RoboMinerGuiExternalBridge::run() {
         return ErrorCode::FAILURE;
     }
 
-    _revealMap(init_crystal_type, robotate_rotate_req, path_validator);
+    MapReconstructor map_reconstructor;
+    _revealMap(init_crystal_type, robotate_rotate_req, path_validator, map_reconstructor);
 
     path_validator->validate();
+
+    const auto shortest_path =
+        _findShortestPathToStartMiningPos(map_reconstructor, path_validator->get_start_pos());
+
+    _goToStartMiningPos(shortest_path, map_reconstructor);
+
+    _mineCrystalPath(map_reconstructor, path_validator->get_start_pos(),
+                     path_validator->get_target_crystal_type());
 
     return ErrorCode::SUCCESS;
 }
@@ -147,9 +163,184 @@ std::pair<uint32_t, uint32_t> RoboMinerGuiExternalBridge::_findColumnsDistance(
                           static_cast<uint32_t>(right_col));
 }
 
+bool RoboMinerGuiExternalBridge::_canVisit(const std::vector<std::vector<int32_t>>& map,
+                                           const FieldPos& pos) const {
+    if (0 > pos.row || static_cast<int32_t>(map.size()) <= pos.row) {
+        return false;
+    }
+
+    if (0 > pos.col || static_cast<int32_t>(map[0].size()) <= pos.col) {
+        return false;
+    }
+
+    if (map[pos.row][pos.col] == OBSTACLE) {
+        return false;
+    }
+
+    return true;
+}
+
+std::vector<FieldPos> RoboMinerGuiExternalBridge::_findShortestPathToStartMiningPos(
+    MapReconstructor& reconstructor, const FieldPos& targetPos) {
+    std::vector<std::vector<int32_t>> map2d = reconstructor.get_2d_map_representation();
+    auto [crystal_type, start_pos] = reconstructor.get_current_position();
+
+    std::set<FieldPos> visited_pos;
+    std::map<FieldPos, FieldPos> traversed_path;
+
+    std::queue<FieldPos> pos_queue;
+    pos_queue.push(start_pos);
+    visited_pos.insert(start_pos);
+    while (!pos_queue.empty()) {
+        FieldPos curr_pos = pos_queue.front();
+        pos_queue.pop();
+
+        if (curr_pos == targetPos) {
+            break;
+        }
+
+        constexpr auto arr_size = 4;
+        const std::array<FieldPos, arr_size> dirs = {
+            FieldPos{curr_pos.row, curr_pos.col - 1}, FieldPos{curr_pos.row - 1, curr_pos.col},
+            FieldPos{curr_pos.row, curr_pos.col + 1}, FieldPos{curr_pos.row + 1, curr_pos.col}};
+
+        for (const auto& dir : dirs) {
+            if (_canVisit(map2d, dir) && visited_pos.find(dir) == visited_pos.end()) {
+                visited_pos.insert(dir);
+                pos_queue.push(dir);
+                traversed_path[dir] = curr_pos;
+            }
+        }
+    }
+
+    std::vector<FieldPos> shortest_path;
+    shortest_path.push_back(targetPos);
+
+    FieldPos parent = traversed_path[targetPos];
+    while (traversed_path.find(parent) != traversed_path.end()) {
+        shortest_path.push_back(parent);
+        parent = traversed_path[parent];
+    }
+
+    return shortest_path;
+}
+
+void RoboMinerGuiExternalBridge::_goToStartMiningPos(const std::vector<FieldPos>& path,
+                                                     MapReconstructor& reconstructor) const {
+    auto robot_rot_response = _rotateRobot(ROTATE_LEFT);
+    auto [crystal_type, start_pos] = reconstructor.get_current_position();
+    for (auto rit = path.rbegin(); rit != path.rend(); ++rit) {
+        _adjustRobotDir(start_pos, *rit, robot_rot_response->robot_position_response.robot_dir);
+        auto robot_move_forw_req = std::make_shared<RobotMove::Request>();
+        auto curr_move_dir_response = _moveRobotForward(robot_move_forw_req);
+        start_pos = *rit;
+        robot_rot_response->robot_position_response.set__robot_dir(
+            curr_move_dir_response->robot_position_response.robot_dir);
+    }
+}
+
+void RoboMinerGuiExternalBridge::_mineCrystalPath([[maybe_unused]] MapReconstructor& reconstructor,
+                                                  const FieldPos& startPos,
+                                                  const uint8_t targetCrystal) const {
+    auto activate_mining_req = std::make_shared<ActivateMiningValidate::Request>();
+    auto activate_mining_result =
+        _activateMiningValidateClient->async_send_request(activate_mining_req);
+    std::shared_ptr<ActivateMiningValidate::Response> activate_mining_response =
+        activate_mining_result.get();
+
+    auto robot_rot_response = _rotateRobot(ROTATE_RIGHT);
+
+    std::stack<RobotMoveResponse> robot_move_ptr_stack;
+    robot_move_ptr_stack.push(robot_rot_response);
+
+    std::stack<FieldPos> field_pos_stack;
+    field_pos_stack.push(startPos);
+
+    std::set<FieldPos> field_pos_set;
+    field_pos_set.insert(startPos);
+
+    while (!robot_move_ptr_stack.empty()) {
+        auto curr_move_dir_response = robot_move_ptr_stack.top();
+        robot_move_ptr_stack.pop();
+
+        auto curr_pos = field_pos_stack.top();
+        field_pos_stack.pop();
+
+        if (curr_move_dir_response->robot_position_response.surrounding_tiles[FORWARD_TILE] ==
+            targetCrystal) {
+            auto robot_move_forw_req = std::make_shared<RobotMove::Request>();
+            curr_move_dir_response = _moveRobotForward(robot_move_forw_req);
+            _setVisitedTile(curr_pos, curr_move_dir_response);
+            field_pos_set.insert(curr_pos);
+        }
+
+        bool hasRobotRotLeft = false;
+        bool hasRobotRotLeftCenter = false;
+        bool hasRobotRotRight = false;
+
+        FieldPos left_tile_pos = _findFuturePos(
+            curr_pos, LEFT_TILE, curr_move_dir_response->robot_position_response.robot_dir);
+        FieldPos right_tile_pos = _findFuturePos(
+            curr_pos, RIGHT_TILE, curr_move_dir_response->robot_position_response.robot_dir);
+
+        if (curr_move_dir_response->robot_position_response.surrounding_tiles[LEFT_TILE] ==
+                targetCrystal &&
+            field_pos_set.find(left_tile_pos) == field_pos_set.end()) {
+            RobotMoveResponse robot_move_left_res = _rotateRobot(ROTATE_LEFT);
+            robot_move_ptr_stack.push(robot_move_left_res);
+            field_pos_stack.push(curr_pos);
+            hasRobotRotLeft = true;
+        }
+
+        if (curr_move_dir_response->robot_position_response.surrounding_tiles[FORWARD_TILE] ==
+                targetCrystal) {
+            if (hasRobotRotLeft) {
+                RobotMoveResponse robot_move_forw_res = _rotateRobot(ROTATE_RIGHT);
+                robot_move_ptr_stack.push(robot_move_forw_res);
+                field_pos_stack.push(curr_pos);
+                hasRobotRotLeftCenter = true;
+            } else {
+                robot_move_ptr_stack.push(curr_move_dir_response);
+                field_pos_stack.push(curr_pos);
+                hasRobotRotLeftCenter = true;
+            }
+        }
+
+        if (curr_move_dir_response->robot_position_response.surrounding_tiles[RIGHT_TILE] ==
+                targetCrystal &&
+            field_pos_set.find(right_tile_pos) == field_pos_set.end()) {
+            if (hasRobotRotLeft && hasRobotRotLeftCenter) {
+                RobotMoveResponse robot_move_right_res = _rotateRobot(ROTATE_RIGHT);
+                robot_move_ptr_stack.push(robot_move_right_res);
+                field_pos_stack.push(curr_pos);
+                hasRobotRotRight = true;
+            } else if (hasRobotRotLeft) {
+                RobotMoveResponse robot_move_right_res;
+                for (uint8_t j = 0; j < LEFT_RIGHT_ROT_DISTANCE; ++j)
+                    robot_move_right_res = _rotateRobot(ROTATE_RIGHT);
+                robot_move_ptr_stack.push(robot_move_right_res);
+                field_pos_stack.push(curr_pos);
+                hasRobotRotRight = true;
+            } else {
+                RobotMoveResponse robot_move_right_res = _rotateRobot(ROTATE_RIGHT);
+                robot_move_ptr_stack.push(robot_move_right_res);
+                field_pos_stack.push(curr_pos);
+                hasRobotRotRight = true;
+            }
+        }
+
+        if (!hasRobotRotLeft && !hasRobotRotLeftCenter && !hasRobotRotRight) {
+            curr_move_dir_response = _rotateRobot(ROTATE_RIGHT);
+            robot_move_ptr_stack.push(curr_move_dir_response);
+            field_pos_stack.push(curr_pos);
+        }
+    }
+}
+
 void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType,
                                             RobotMoveResponse moveDirPtr,
-                                            PathVallidatorPtr pathValidator) {
+                                            PathVallidatorPtr pathValidator,
+                                            MapReconstructor& reconstructor) {
     std::stack<RobotMoveResponse> robot_move_ptr_stack;
     robot_move_ptr_stack.push(moveDirPtr);
 
@@ -160,9 +351,8 @@ void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType,
     std::set<FieldPos> field_pos_set;
     field_pos_set.insert(start_pos);
 
-    MapReconstructor map_reconstructor;
     MapDimension init_map_dim;
-    map_reconstructor.update_map(start_pos, initPosCrystalType, init_map_dim);
+    reconstructor.update_map(start_pos, initPosCrystalType, init_map_dim);
     while (!robot_move_ptr_stack.empty()) {
         auto curr_move_dir_response = robot_move_ptr_stack.top();
         robot_move_ptr_stack.pop();
@@ -180,13 +370,13 @@ void RoboMinerGuiExternalBridge::_revealMap(const uint8_t initPosCrystalType,
             if (field_pos_set.find(curr_pos) == field_pos_set.end()) {
                 field_pos_set.insert(curr_pos);
                 map_dim = _calcMapDimensions(field_pos_set);
-                map_reconstructor.update_map(curr_pos, next_crystal_type, map_dim);
-                map_reconstructor.reconstruct();
+                reconstructor.update_map(curr_pos, next_crystal_type, map_dim);
+                reconstructor.reconstruct();
             }
         }
 
-        if (_validateMap(map_dim.rows, map_dim.cols, map_reconstructor.get_data())) {
-            pathValidator->collect_crystals(map_reconstructor.get_crystals_pos());
+        if (_validateMap(map_dim.rows, map_dim.cols, reconstructor.get_map_data())) {
+            pathValidator->collect_crystals(reconstructor.get_crystals_positions());
             return;
         }
 
@@ -387,4 +577,53 @@ FieldPos RoboMinerGuiExternalBridge::_findFuturePos(FieldPos currPos, const int3
     }
 
     return currPos;
+}
+
+void RoboMinerGuiExternalBridge::_adjustRobotDir(const FieldPos& currPos, const FieldPos& targetPos,
+                                                 int32_t currDir) const {
+    switch (currDir) {
+        case DIRECTION_UP:
+            if (targetPos.col < currPos.col) {
+                _rotateRobot(ROTATE_LEFT);
+            } else if (targetPos.col > currPos.col) {
+                _rotateRobot(ROTATE_RIGHT);
+            } else if (targetPos.row > currPos.row) {
+                _rotateRobot(ROTATE_LEFT);
+                _rotateRobot(ROTATE_LEFT);
+            }
+            break;
+        case DIRECTION_RIGHT:
+            if (targetPos.col < currPos.col) {
+                _rotateRobot(ROTATE_LEFT);
+                _rotateRobot(ROTATE_LEFT);
+            } else if (targetPos.row > currPos.row) {
+                _rotateRobot(ROTATE_RIGHT);
+            } else if (targetPos.row < currPos.row) {
+                _rotateRobot(ROTATE_LEFT);
+            }
+            break;
+        case DIRECTION_DOWN:
+            if (targetPos.row < currPos.row) {
+                _rotateRobot(ROTATE_LEFT);
+                _rotateRobot(ROTATE_LEFT);
+            } else if (targetPos.col > currPos.col) {
+                _rotateRobot(ROTATE_RIGHT);
+            } else if (targetPos.col < currPos.col) {
+                _rotateRobot(ROTATE_LEFT);
+            }
+            break;
+        case DIRECTION_LEFT:
+            if (targetPos.row < currPos.row) {
+                _rotateRobot(ROTATE_RIGHT);
+            } else if (targetPos.row > currPos.row) {
+                _rotateRobot(ROTATE_LEFT);
+            } else if (targetPos.col > currPos.col) {
+                _rotateRobot(ROTATE_LEFT);
+                _rotateRobot(ROTATE_LEFT);
+            }
+            break;
+        default:
+            LOGY("Received unsupported direction");
+            break;
+    }
 }
